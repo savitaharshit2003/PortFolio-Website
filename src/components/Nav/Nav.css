@@ -67,6 +67,7 @@ nav h1 {
     top: -12px;
 }
 .mobilemenu{
+    display: flex;
     position: absolute;
     top: 80px;
     width: 100%;

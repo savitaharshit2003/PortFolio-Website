@@ -45,7 +45,7 @@ function Home() {
                deleteSpeed={60}
             />
           </div>
-          <button>HIRE ME</button>
+          {/* <button>HIRE ME</button> */}
         </div>
       </div>
 
