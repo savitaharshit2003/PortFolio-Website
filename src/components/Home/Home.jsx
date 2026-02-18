@@ -3,7 +3,32 @@ import './Home.css'
 import man from '../../assets/man.png'
 import TypingEffect from 'react-typing-effect'
 import { Typewriter } from 'react-simple-typewriter'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 function Home() {
+  useGSAP(()=>{
+   let tl1=gsap.timeline();
+      tl1.from('.line1',{
+        y:80,
+        duration:1,
+        opacity:0,
+      })
+      tl1.from('.line2',{
+         y:80,
+        duration:1,
+        opacity:0,
+      })
+      tl1.from('.line3',{
+         y:80,
+        duration:1,
+        opacity:0,
+      })
+      gsap.from('.righthome img',{
+         x:200,
+        duration:1,
+        opacity:0,
+      })
+    })
   return (
     <div id="home">
       <div className="lefthome">
